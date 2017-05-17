@@ -103,7 +103,6 @@ def preprocess_data(data):
 	images, labels = data
 	new_labels = []
 	for label in labels:
-		print len(new_labels)
 		new_label = np.zeros(label.shape[:2])
 		for i in range(label.shape[0]):
 			for j in range(label.shape[1]):
